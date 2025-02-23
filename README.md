@@ -11,7 +11,7 @@
 <p align="left">Connect with me on <a href="https://www.linkedin.com/in/iamnande/">LinkedIn</a>!</p>
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/iamnande/iamnande/output/snake.svg" alt="snake animation" />
+<img src="https://raw.githubusercontent.com/iamnande/iamnande/refs/heads/output/snake.svg" alt="snake animation" />
 
 <h2>Nerd Stats</h2>
 
