@@ -1,6 +1,8 @@
-<img align="left" height="" src="./me.png"  />
+<img align="left" width="250px" src="./me.png"  />
 
-<h1 align="left">Nick Anderson</h1>
+<div style="">
+  <h1>Nick Anderson</h1>
+</div>
 
 <p align="left">Software Engineer, Astrophysics & Philosophy Enthusiast</p>
 
