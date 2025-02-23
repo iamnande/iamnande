@@ -11,11 +11,12 @@
 <p align="left">Connect with me on <a href="https://www.linkedin.com/in/iamnande/">LinkedIn</a>!</p>
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/iamnande/iamnande/refs/heads/output/snake.svg" alt="snake animation" />
-
-<h2>Nerd Stats</h2>
-
 <div align="center">
+  <h2>Nerd Stats</h2>
+  
+  <img align="center" src="https://raw.githubusercontent.com/iamnande/iamnande/refs/heads/output/snake.svg" alt="snake animation" />
+  <br clear="both">
+
   <img style="vertical-align:middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="40" alt="go logo"  />
   <img width="25" />
   <img style="vertical-align:middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" height="40" alt="apachekafka logo"  />
