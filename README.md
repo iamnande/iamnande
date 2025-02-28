@@ -5,7 +5,6 @@
 <p align="left">Software Engineer, Astrophysics & Philosophy Enthusiast</p>
 <br />
 <p align="left">Halo 👋, I'm a Senior Software Engineer at <a href="https://konghq.com/">Kong, Inc.</a> on the Konnect Platform Services team (we call ourselves TPS). Ask me about our Authorization system, I designed it 🤓.</p>
-<p align="left">I've been working on backend services, and the tools to integrate with them, for most of the last 10 years - with my start being in systems administration and automation. I enjoy building scalable and perfmant solutions at scale. However, even more so I enjoy solutions that yield positive outcomes for end-users.</p>
 <p align="left">I have spent the past decade focusing on backend services and the tools necessary for seamless integration. My career began in systems administration and automation, and over time, I’ve developed a passion for building scalable, high-performance solutions. What drives me most is crafting solutions that not only meet technical requirements but also deliver meaningful, positive outcomes for end-users.</p>
 <br />
 <p align="left">Connect with me on <a href="https://www.linkedin.com/in/iamnande/">LinkedIn</a>!</p>
