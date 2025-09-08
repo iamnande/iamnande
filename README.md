@@ -26,4 +26,6 @@ I'm always trying to squeeze in more reading (currently reading Leviathan Wakes 
 
 Between family, work and dreams of building a next-generation farm in the Midwest someday, days are always exciting!
 
-Let's Connect - [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/iamnande)!
+Let's Connect!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/iamnande)
