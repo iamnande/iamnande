@@ -1,19 +1,45 @@
-# About Me
+# about me
 
-Hey dude! I'm Nick. 👋
+hey dude, i’m nick. 👋
 
-I've been in the tech world for a bit now, primarily building Back-end Software for central Platform teams. When I'm not working - you can usually find me spending time with my family, hitting the outdoors, or trying to find yet-another-hobby (YAH).
+i’m a software engineer with over a decade of experience building scalable,
+high-performance backend systems and platform services that empower teams to
+move faster. my focus spans identity & access management, developer tooling,
+and distributed systems. i’m passionate about designing solutions that
+balance security, efficiency, and experience - so that both teams and customers
+can focus on building value rather than wrestling with infrastructure.
 
-I grew up in Southern California, so the beach, surfing, and (somehow) hockey were huge parts of my life. My family moved to Oregon before I became an adult; we really do hug trees around here - it's super fun. These days - when I'm not spending time my family, you'll find me backpacking, hunting, on the ice or adventuring.
+i grew up in southern california - surfing, music, and hockey shaped my younger
+years. toward the end of my schooling, my family moved to oregon. today, i
+split my time between family, outdoor adventures, and checking out new hands-on
+hobbies. i’m always experimenting, tinkering, and learning, whether it's
+trying out a new framework or language, building out my homelab, and trying to
+100% my favorite games.
 
-I served in the Army Reserves for 13 years, most recently as a Platoon Sergeant (E-6) in a Bridge Platoon. I officially wrapped up my military career in 2023 - but the leadership, discipline, and dynamic problem-solving I picked up during my time in service have definitely carried over into my tech career.
+alongside my tech journey, i served 13 years in the u.s. army reserves, most
+recently as a platoon sergeant (e-6) in a bridge company. that experience
+instilled leadership, discipline, and high-stakes problem-solving skills
+that i carry into every engineering challenge.
 
-Professionally I've been busy in the software engineering world. I'm currently at ngrok helping build world-class developer-first networking infrastructure. Before that - I was at Kong Inc. where I helped build and lead platform design and deliver high-performance platforms that powered globally-distributed systems. I've also had the chance to work at Nike, where I helped build next-gen tools and platforms for large-scale deployments and building up the shared developer experience tooling and automation deployed across multiple tech organizations. I owe my start in this industry to Dave McCall at U.S. Bank - I was effectively a junior SRE engineer, or System Administrator with a limited scope and fierce automation requirements, for an Enterprise Content Management system (learning from OG TeamSite folks). While there, I also had the opportunity to deploy physical Google search nodes to support call center data and public usbank.com search - yes, the chassis really are yellow.
+**professional experience:**  
+- **ngrok:** building world-class, developer-first networking infrastructure
+  at scale.  
+- **kong inc.:** built globally distrubted and scalable platforms for the
+konnect, including identity & access management, audit logging with siem
+  integrations, and organic search.
+- **nike:** enabled teams to deploy applications reliably and securely at
+  enterprise scale by providing self-service access to fully managed
+  k8s-backed environments. my first journey into people management, leading a 
+  team to drive platform strategy and design patterns across the enterprise.
+- **u.s. bank:** started as a junior sre, system admin we called it, managing
+  enterprise content systems and deploying physical search nodes for call 
+  center and public search workloads.
 
-Learning is such a huge part of who I am - whether it's reading books, watching YouTube tutorials & reviews, or hands-on tinkering. I'm a visual learner, so I like to get my hands dirty and experiment with new ideas. Even with all the work, I'm nerdy enough to describe my learning as though I'm shamelessly gathering new magic to junction to different character stats to OP my favorite game character - Squall from Finally Fantasy 8. I'm always trying to squeeze in more reading (currently reading Leviathan Wakes by James S. A. Corey and Open Veins of Latin America by Eduardo Galeano).
+i believe inclusion is a technical choice as much as a cultural one. i aim to
+design platforms that meet people where they are, reduce hidden complexity,
+and create space for developers of all experience levels to contribute with
+confidence.
 
-Between family, work and dreams of building a next-generation farm in the Midwest someday, days are always exciting!
+let’s connect 🤘
 
-Let's Connect!
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/iamnande)
+[![linkedin](https://img.shields.io/badge/linkedin-profile-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/iamnande)
