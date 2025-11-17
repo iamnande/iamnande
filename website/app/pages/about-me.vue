@@ -21,8 +21,8 @@ useSeoMeta({
 <template>
     <UPage v-if="page">
         <UPageHeader
-            title="PageHeader"
-            description="A responsive page header with title, description and actions."
+            :title="page.title"
+            :description="page.description"
         />
         <UPageSection
             :title="page.about.title"

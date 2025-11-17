@@ -27,14 +27,6 @@ const createImageSchema = () =>
     alt: z.string(),
   });
 
-const createAuthorSchema = () =>
-  z.object({
-    name: z.string(),
-    description: z.string().optional(),
-    username: z.string().optional(),
-    to: z.string().optional(),
-    avatar: createImageSchema().optional(),
-  });
 
 export default defineContentConfig({
   collections: {
@@ -44,7 +36,7 @@ export default defineContentConfig({
       schema: z.object({
         hero: z.object({
           links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema()),
+          images: z.array(createImageSchema()).optional(),
         }),
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
