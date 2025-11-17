@@ -1,0 +1,51 @@
+seo:
+  title: "nick anderson"
+  description: "i’m nick anderson, a software engineer with a decade of experience building
+    scalable backend systems and platform services. i focus on identity & access
+    management, developer tooling, and distributed systems, creating infrastructure
+    that empowers teams to move faster."
+title: "nick anderson"
+description: "building systems and tools that just work, so developers can focus on innovation."
+hero:
+  links:
+    - label: "let's connect!"
+      to: "https://www.linkedin.com/in/iamnande"
+about:
+  title: about me
+  description: |
+    i’ve been building software for over a decade, mostly back-end systems and
+    platform services that help teams move faster without tripping over
+    infrastructure. my sweet spots are identity & access, developer tooling, and
+    distributed systems. i’m all about designing stuff that’s secure, efficient,
+    and just feels right to use — so devs can actually focus on building cool
+    things instead of wrestling with servers and configs.
+experience:
+  title: work experience
+  items:
+    - position: "senior software engineer"
+      date: "2025 - Present"
+      company:
+        name: ngrok
+        logo: "i-simple-icons-ngrok"
+        url: "https://ngrok.com"
+    - position: "senior software engineer"
+      date: "2022 - 2025"
+      company:
+        name: kong, inc.
+        logo: "i-simple-icons-kong"
+        url: "https://konghq.com"
+    - position: "lead software engineer"
+      date: "2014 - 2022"
+      company:
+        name: nike, inc.
+        logo: "i-simple-icons-nike"
+        url: "https://nike.com"
+    - position: "system engineer"
+      date: "2012 - 2014"
+      company:
+        name: usbank, inc.
+        logo: "i-simple-icons-linuxcontainers"
+        url: "https://usbank.com"
+blog:
+  title: latest articles
+  description: "Some of my recent thoughts"

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@source "../../../content/**/*";
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+
+  --noise: repeating-linear-gradient(
+    0deg, 
+    rgba(0,0,0,0.02) 0 4px, 
+    transparent 4px 8px
+  );
+}
+
+:root {
+  --ui-primary: var(--ui-color-primary-500);
+  --ui-container: var(--container-7xl);
+
+  ::selection {
+    color: #282a30;
+    background-color: #c8c8c8;
+  }
+}
+
+.dark {
+  ::selection {
+    color: #ffffff;
+    background-color: #474747;
+  }
+}
+
+/* base forest-bg */
+.forest-bg {
+  background-image: var(--noise), url('/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-image: linear-gradient(
+    hsl(120 30% 5% / 0.25),
+    hsl(120 20% 10% / 0.35)
+  ) 1 fill;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* dark mode override */
+.dark .forest-bg {
+  border-image: linear-gradient(
+    hsl(120 30% 5% / 0.85),
+    hsl(120 20% 10% / 0.95)
+  ) 1 fill;
+}
