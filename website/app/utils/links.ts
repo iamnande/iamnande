@@ -7,13 +7,13 @@ export const navLinks: NavigationMenuItem[] = [
     to: "/",
   },
   {
-    label: "about me",
+    label: "about",
     icon: "i-lucide-user",
-    to: "/about-me",
+    to: "/about",
   },
-  {
-    label: "home lab",
-    icon: "i-lucide-flask-conical",
-    to: "/home-lab",
-  },
+  //  {
+  //    label: "lab",
+  //    icon: "i-lucide-flask-conical",
+  //    to: "/lab",
+  //  },
 ];

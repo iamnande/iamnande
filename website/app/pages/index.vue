@@ -10,128 +10,117 @@ if (!page.value) {
     })
 }
 
-const testimonials = ref([
-  {
-    user: {
-      name: 'Evan You',
-      description: 'Author of Vue.js and Vite',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/499550?v=4',
-        alt: 'Evan You'
-      }
+const quotes = ref([
+    {
+        "quote": "Medicine, law, business, engineering… these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love… these are what we stay alive for.",
+        "user": {
+            "name": "John Keating",
+            "description": "Dead Poets Society",
+            "avatar": {
+                "src": "https://m.media-amazon.com/images/M/MV5BOGYwYWNjMzgtNGU4ZC00NWQ2LWEwZjUtMzE1Zjc3NjY3YTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+                "alt": "John Keating"
+            }
+        }
     },
-    quote: 'Nuxt on Cloudflare infra with minimal effort - this is huge!'
-  },
-  {
-    user: {
-      name: 'Igor Minar',
-      description: 'Software Engineer at Cloudflare',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/216296?v=4',
-        alt: 'Igor Minar'
-      }
+    {
+        "quote": "However difficult the moment, however frustrating the hour, it will not be long, because truth crushed to earth will rise again. How long? Not long, because no lie can live forever. How long? Not long, because you shall reap what you sow. How long? Not long, because the arc of the moral universe is long, but it bends toward justice.",
+        "user": {
+            "name": "Martin Luther King Jr.",
+            "description": "Civil Rights Leader",
+            "avatar": {
+                "src": "https://karsh.org/wordpress/wp-content/uploads/2016/10/Yousuf-Karsh-Martin-Luther-King-1962-1574x1960.jpg",
+                "alt": "Martin Luther King Jr."
+            }
+        }
     },
-    quote: 'I love the polish and the batteries-included approach. NuxtHub takes web framework and hosting integration to a new level!'
-  },
-  {
-    user: {
-      name: 'Charlie Hield',
-      description: 'Senior Creative Technologist',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/527849?v=4',
-        alt: 'Charlie Hield'
-      }
+    {
+        "quote": "Don't be ashamed to need help. Like a soldier storming a wall, you have a mission to accomplish. And if you've been wounded and you need a comrade to pull you up? So what?",
+        "user": {
+            "name": "Marcus Aurelius",
+            "description": "Meditations",
+            "avatar": {
+                "src": "https://i.pinimg.com/736x/02/ac/53/02ac5307454e22692309ea466f946c58.jpg",
+                "alt": "Marcus Aurelius"
+            }
+        }
     },
-    quote: 'NuxtHub is hands down the easiest way to get a project from zero to production on the Cloudflare stack!'
-  },
-  {
-    user: {
-      name: 'Israel Ortuño',
-      description: 'Co-founder of VueJobs',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/1769417?v=4',
-        alt: 'Israel Ortuño'
-      }
+    {
+        "quote": "More pursuit than study lately. You see, I cannot find him. It's been twenty years now. I am starting to lose confidence. I just work for Vizzini to pay the bills. There's not a lot of money in revenge.",
+        "user": {
+            "name": "Inigo Montoya",
+            "description": "The Princess Bride",
+            "avatar": {
+                "src": "https://cdn.britannica.com/67/260667-050-6C1FF2CD/publicity-still-from-film-the-princess-bride-1987.jpg",
+                "alt": "Inigo Montoya"
+            }
+        }
     },
-    quote: 'I can\'t find an excuse to not go full-stack with Nuxt from now on. Ship fast the Nuxt way, zero config. Just plug & deploy.'
-  },
-  {
-    user: {
-      name: 'Fayaz Ahmed',
-      description: 'Indie Hacker',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/15716057?v=4',
-        alt: 'Fayaz Ahmed'
-      }
+    {
+        "quote": "First got it when he was six, didn't know any tricks. Matter of fact, first time he got on it, he slipped. Landed on his hip and busted his lip. For a week he had to talk with a lisp, like thisss... Now we can end the story right here. But shorty didn't quit, it was something in the air. Yeah, he said it was something so appealing. He couldn't fight the feeling, something about it. He knew he couldn't doubt it, couldn't understand it. Branded, since the first kickflip he landed, ugh (Woo)",
+        "user": {
+            "name": "Lupe Fiasco",
+            "description": "Kick, Push",
+            "avatar": {
+                "src": "https://content-images.p-cdn.com/images/1a/ca/08/90/92be4a9b94096767c09679a3/_500W_500H.jpg",
+                "alt": "Lupe Fiasco"
+            }
+        }
     },
-    quote: 'Took me less than 90 seconds to deploy an app with DB, KV, File storage and Caching, all on the edge with just a single command.'
-  },
-  {
-    user: {
-      name: 'Tommy J. Vedvik',
-      description: 'UX Developer',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/48070?v=4',
-        alt: 'Tommy J. Vedvik'
-      }
+    {
+        "quote": "After all this time? Always.",
+        "user": {
+            "name": "Professors Snape",
+            "description": "Harry Potter and the Deathly Hallows",
+            "avatar": {
+                "src": "https://cdn.costumewall.com/wp-content/uploads/2017/06/severus-snape.jpg",
+                "alt": "Harry Potter and the Deathly Hallows"
+            }
+        }
     },
-    quote: 'Nuxt is becoming the best framework for bootstrappers imo. NuxtHub is a layer on top of Cloudflare services for cheap & fast full-stack edge hosting.'
-  },
-  {
-    user: {
-      name: 'Dario Piotrowicz',
-      description: 'Web Developer at Cloudflare',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/61631103?v=4',
-        alt: 'Dario Piotrowicz'
-      }
+    {
+        "quote": "You cannot get through a single day without having an impact on the world around you. What you do makes a difference, and you have to decide what kind of difference you want to make.",
+        "user": {
+            "name": "Jane Goodall",
+            "description": "",
+            "avatar": {
+                "src": "https://editorial01.shutterstock.com/preview/13871366ep/2015be93/Shutterstock_13871366ep.jpg",
+                "alt": "Jane Goodall",
+            }
+        }
     },
-    quote: 'I love how NuxtHub combines, amplifies and simplifies the Cloudflare tooling with the wide and mature Nuxt ecosystem. I cannot wait to see how it will evolve and expand in the future!'
-  },
-  {
-    user: {
-      name: 'Markus Oberlehner',
-      description: 'Web Developer',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/6883314?v=4',
-        alt: 'Markus Oberlehner'
-      }
+    {
+        "quote": "You've got to remember that these are just simple farmers. These are people of the land. The common clay of the new West. You know... morons.",
+        "user": {
+            "name": "Blazing Saddles",
+            "description": "The Waco Kid (Jim)",
+            "avatar": {
+                "src": "https://hollywoodinhidef.com/wp-content/uploads/blazing-sheriff-welcome-720x640.jpg",
+                "alt": "Blazing Saddles"
+            }
+        }
     },
-    quote: 'Just deployed my first site to Cloudflare using NuxtHub. Very sleek experience!'
-  },
-  {
-    user: {
-      name: 'Anthony Fu',
-      description: 'Core team Vue.js, Vite & Nuxt',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/11247099?v=4',
-        alt: 'Anthony Fu'
-      }
+    {
+        "quote": " It is strange to think, I haven't seen you since a month. I have seen the new moon, but not you. I have seen sunsets and sunrises, but nothing of your beautiful face. The pieces of my broken heart are so small that they could be passed through the eye of a needle. I miss you like the sun misses the flower; like the sun misses the flower in the depths of winter. Instead of beauty to direct its light to, the heart hardens like the frozen world your absence has banished me to. I next compete in the city of Paris, I will find it empty and in the winter if you are not there. Hope guides me, that is what gets me through the day and the night. The hope that after you're gone from my sight, it will not be the last time that I look upon you.",
+        "user": {
+            "name": "A Knight's Tale",
+            "description": "William Thatcher",
+            "avatar": {
+                "src": "https://image.tmdb.org/t/p/original/alqtTd5TFZhftC7B9HLYJHsDx89.jpg",
+                "alt": "William Thatcher"
+            }
+        }
     },
-    quote: 'It\'s amazing to be able to run a single command and get existing Nuxt project deployed on edge within minutes! It felt like unlocking the missing infrastructure and UI for Cloudflare, enhancing the developer experience in such an extraordinary way.'
-  },
-  {
-    user: {
-      name: 'Jonathan Beckman',
-      description: 'Founder of GuaranTee Time',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/90707158?v=4',
-        alt: 'Jonathan Beckman'
-      }
-    },
-    quote: 'NuxtHub and Cloudflare are my go to for full stack apps. The DX is joyous and far superior to any other platform I\'ve used. My team is able to iterate quickly, and build beautiful, performant apps with ease.'
-  },
-  {
-    user: {
-      name: 'Eckhardt Dreyer',
-      description: 'Lead Developer at YG',
-      avatar: {
-        src: 'https://avatars.githubusercontent.com/u/37825447?v=4',
-        alt: 'Eckhardt Dreyer'
-      }
-    },
-    quote: 'At YG, our team recently grew and that meant more seats on all the tools we use. Migrating our hosting workflow to NuxtHub not only took just a few minutes but saved us money from our previous provider. NuxtHub provides an excellent management layer on top of our infrastructure and we\'re super happy about the move!'
-  }
+    {
+        "quote": "Love isn’t something that we invented. It’s observable. Powerful. It has to mean something. Maybe it means something more, something we can’t yet understand. Maybe it’s some evidence, some artifact of a higher dimension that we can’t consciously perceive. Love is the one thing that we’re capable of perceiving that transcends dimensions of time and space.",
+        "user": {
+            "name": "Interstallar",
+            "description": "Brand",
+            "avatar": {
+                "src": "https://pbs.twimg.com/ext_tw_video_thumb/1654624712650268672/pu/img/VZbiSv9UyGXnyPpR.jpg",
+                "alt": "Interstellar"
+            }
+        }
+    }
 ])
 
 useSeoMeta({
@@ -152,19 +141,19 @@ useSeoMeta({
         />
 
         <UPageHeader 
-            title="my favorite movie quotes"
+            title="a peek into my brain"
             class="mt-10 flex items-center justify-center"
         />
         <UPageColumns class="mt-10 mb-20">
             <UPageCard
-                v-for="(testimonial, index) in testimonials"
+                v-for="(quote, index) in quotes"
                 :key="index"
                 variant="subtle"
-                :description="testimonial.quote"
+                :description="quote.quote"
                 :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
             >
                 <template #footer>
-                    <UUser v-bind="testimonial.user" size="xl" />
+                    <UUser v-bind="quote.user" size="xl" />
                 </template>
             </UPageCard>
         </UPageColumns>
