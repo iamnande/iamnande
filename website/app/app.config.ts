@@ -8,14 +8,8 @@ export default defineAppConfig({
     email: "nick@morethq.com",
   },
   ui: {
-    pageHero: {
-      slots: {
-        container:
-          "flex flex-col lg:grid py-12 sm:py-24 lg:py-24 gap-16 sm:gap-y-24",
-      },
-    },
     colors: {
-      primary: "stone",
+      primary: "rose",
     },
   },
   footer: {

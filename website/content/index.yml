@@ -1,15 +1,21 @@
 seo:
-  title: "nick anderson"
+  title: "Nick Anderson"
   description: "i’m nick anderson, a software engineer with a decade of experience building
     scalable backend systems and platform services. i focus on identity & access
     management, developer tooling, and distributed systems, creating infrastructure
     that empowers teams to move faster."
-title: "nick anderson"
-description: "building systems and tools that just work, so developers can focus on innovation."
+title: "Nick Anderson"
+description: "I'm a seasoned platform engineer, distributed systems wrangler, and developer experience advocate based in Portland, Oregon."
 hero:
   links:
     - label: "let's connect!"
       to: "https://www.linkedin.com/in/iamnande"
+      icon: "i-lucide-linkedin"
+      variant: "solid"
+    - label: "my setup"
+      to: "/about-me" # for now
+      icon: "i-lucide-terminal"
+      variant: "subtle"
 about:
   title: about me
   description: |

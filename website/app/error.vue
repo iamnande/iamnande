@@ -40,7 +40,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
 
 <template>
   <div>
-    <AppHeader :links="navLinks" />
+    <Header :links="navLinks" />
 
     <UMain>
       <UContainer>
@@ -50,18 +50,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
       </UContainer>
     </UMain>
 
-    <AppFooter />
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        shortcut="meta_k"
-        :navigation="navigation"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
-
+    <Footer />
     <UToaster />
   </div>
 </template>

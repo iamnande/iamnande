@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
 
-const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
+const color = computed(() => colorMode.value === 'dark' ? '#211b34' : 'white')
 
 useHead({
   meta: [
@@ -19,48 +19,18 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s',
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
+  ogImage: 'https://avatars.githubusercontent.com/u/7806510?v=4?s=400',
 })
-
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
-    return Promise.all([
-      queryCollectionNavigation('blog')
-    ])
-  }, {
-    transform: data => data.flat()
-  }),
-  useLazyAsyncData('search', () => {
-    return Promise.all([
-      queryCollectionSearchSections('blog')
-    ])
-  }, {
-    server: false,
-    transform: data => data.flat()
-  })
-])
 </script>
 
 <template>
-  <UApp>
-    <div class="forest-bg min-h-screen">
-      <NuxtLayout>
-        <UMain class="relative">
-          <NuxtPage />
-        </UMain>
-      </NuxtLayout>
-    </div>
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        :navigation="navigation"
-        shortcut="meta_k"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
-  </UApp>
+    <UApp>
+        <NuxtLayout>
+            <UMain>
+                <NuxtPage />
+            </UMain>
+        </NuxtLayout>
+    </UApp>
 </template>
 
 <style scoped lang="css">

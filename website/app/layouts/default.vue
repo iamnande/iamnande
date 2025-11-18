@@ -2,11 +2,11 @@
 </script>
 
 <template>
-  <div>
+    <Header :links="navLinks" />
+
     <UContainer>
-      <AppHeader :links="navLinks" />
-      <slot />
-      <AppFooter />
+        <slot />
     </UContainer>
-  </div>
+        
+    <Footer />
 </template>
