@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ kiss ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
