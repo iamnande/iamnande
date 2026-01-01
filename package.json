@@ -1,7 +1,7 @@
 {
   "name": "iamnande-web",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,6 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.16.6"
+    "@astrojs/mdx": "^4.3.13",
+    "@lucide/astro": "^0.552.0",
+    "@tailwindcss/vite": "^4.1.16",
+    "astro": "^5.16.6",
+    "daisyui": "^5.3.10",
+    "tailwindcss": "^4.1.16"
   }
 }
