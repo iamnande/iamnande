@@ -1,6 +1,17 @@
 ---
-title: "About Me"
-photo: "https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=Destiny&scale=90&backgroundColor=763900,9e5622,ecad80,f2d3b1,c0aede,b6e3f4"
+title: "about me"
+photo: "/images/memento-mori.jpg"
 ---
 
-I'm a full-stack developer with a passion for creating beautiful, functional, and user-friendly web applications. With experience in **modern frameworks and technologies**, I love turning ideas into reality through code. When I'm not coding, you can find me **exploring new technologies**, contributing to open source, or enjoying a good cup of coffee.
+
+i’m a software engineer with 10+ years building backend systems, platforms, and 
+distributed services. i like working where performance, security, and developer
+experience overlap.
+
+i grew up in southern california and ended up in oregon, where life is a mix of 
+family, outdoors, and whatever new hobby i’m messing with. i also spent 13
+years in the u.s. army reserve, ending as a platoon sergeant, which taught me
+a great deal about leading teams and staying steady under pressure.
+
+i care about building platforms that feel simple, powerful, and welcoming to 
+developers of all experience levels.

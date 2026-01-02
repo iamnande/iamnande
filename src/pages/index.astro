@@ -10,7 +10,7 @@ import Contact from "../components/Contact.astro";
 import { Briefcase, GraduationCap } from "@lucide/astro";
 import { getEntry, render } from "astro:content";
 import { siteConfig } from "../config";
-import bloomfolioLogo from "../assets/bloomfolio.png";
+import heroLogo from "../assets/hero.jpg";
 
 // Load about content
 const aboutEntry = await getEntry("about", "about");
@@ -18,16 +18,17 @@ const { Content: AboutContent } = await render(aboutEntry);
 ---
 
 <Layout
-  title={`${siteConfig.name} - Portfolio`}
+  title={`${siteConfig.name}`}
   description={siteConfig.description}
 >
   <main>
     <!-- Hero Section (Always visible) -->
     <Hero
+      nickname={siteConfig.nickname}
       name={siteConfig.name}
       title={siteConfig.title}
       description={siteConfig.description}
-      avatar={bloomfolioLogo}
+      avatar={heroLogo}
       location={siteConfig.location}
       socialLinks={siteConfig.socialLinks}
     />

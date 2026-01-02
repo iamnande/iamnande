@@ -4,7 +4,6 @@
  * This file contains all the configuration settings for the Bloomfolio template.
  * Update these values to personalize your portfolio site.
  */
-
 import { BookOpen, FileText, Flower2, CodeXml } from "@lucide/astro";
 import { Code } from "astro:components";
 
@@ -69,6 +68,7 @@ export interface SectionsConfig {
  */
 export interface SiteConfig {
   /** Site/Portfolio name */
+  nickname: string;
   name: string;
   /** Main title/headline */
   title: string;
@@ -95,25 +95,21 @@ export interface SiteConfig {
  * Update these values to customize your portfolio
  */
 export const siteConfig: SiteConfig = {
-  name: "🌻 Bloomfolio",
-  title: "Astro Portfolio Template built with 🌼 DaisyUI",
+  nickname: "nick",
+  name: "Nick Anderson",
+  title: "Senior Software Engineer @ ngrok",
   description:
-    "A modern, responsive, and customizable portfolio template built with Astro and DaisyUI. Perfect for developers, designers, and creatives to showcase their work and skills.",
-  avatar: "../assets/bloomfolio.png",
-  location: "🇧🇷 Brazil",
-  email: "hello@example.com",
+    "my name is nick anderson. over the last decade i've worked on identity & access management, distributed systems, and developer platforms. my focus is building software that is quiet, resilient, and kind to the people who depend on it.",
+  avatar: "../assets/me.jpg",
+  location: "🇺🇸 Portland, USA",
+  email: "nick@morethq.com",
   socialLinks: {
-    github: "https://github.com/lauroguedes",
-    linkedin: "https://linkedin.com/in/lauroguedes",
-    twitter: "https://twitter.com/leowg",
-    bluesky: "https://bsky.app/profile/lauroguedes.bsky.social",
-    instagram: "https://instagram.com/lauroguedes.dev",
-    youTube: "https://youtube.com/leowgweb",
-    codetips: "https://codetips.cloud/u/lauroguedes",
+    github: "https://github.com/iamnande",
+    linkedin: "https://linkedin.com/in/iamnande",
   },
   enableThemeSelector: true,
   extraLinks: {
-    enable: true,
+    enable: false,
     links: [
       {
         link: "/blog/guides/bloomfolio-complete-guide",
@@ -140,10 +136,11 @@ export const siteConfig: SiteConfig = {
   sections: {
     about: true,
     projects: true,
-    blog: true,
+    // TODO(nick): write stuff yo
+    blog: false,
     work: true,
-    education: true,
-    hackathons: true,
+    education: false,
+    hackathons: false,
     contact: true,
   },
 };
