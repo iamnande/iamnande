@@ -2,7 +2,7 @@
 
 > an unexamined life is not worth living
 
-## why this exists
+## on becoming
 
 you've been a part of "institutions" in various parts of your world.
 
@@ -26,18 +26,18 @@ this website exists to bring forth a refined impression of these experiences in
 such a way the reader can gleen not only information, such as a resume, but the
 impacts along the way which made me - me.
 
-## who it's for
+## on voice
 
-yourself. you believe it's important to have a voice, use this voice for
-purpose, to elevate underrepresented principles & people. 
+we are the 99, and we build for each other.
+
+you believe it's important to have a voice, use this voice for purpose,
+to elevate underrepresented principles & people. 
 
 in an age of "content", misinformation, and most especially ever-growing
 opportunities to collaborate with others also chasing after a better world - 
 silence allows for distrust, uncomfortable interactions, and guilt to fester.
 
-we are the 99, and we build for each other.
-
-## what it believes
+## on beliefs
 
 humanity is the core of everything - we must be unwavering in it's
 protection.
