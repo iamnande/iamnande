@@ -1,0 +1,14 @@
+# nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# node dependencies
+node_modules
+
+# logs
+logs
+*.log
