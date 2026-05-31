@@ -23,7 +23,7 @@ each company and role has had it's own share of learnings, fond memories,
 exciting moments, wins, losses, and even dispair.
 
 this website exists to bring forth a refined impression of these experiences in
-such a way the reader can gleen not only information, such as a resume, but the
+such a way the reader can glean not only information, such as a resume, but the
 impacts along the way which made me - me.
 
 ## on voice
