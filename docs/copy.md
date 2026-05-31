@@ -14,7 +14,7 @@ finalized copy for each section.
 
 #### career one-liner (low line)
 
-> i make sure ideas survive long enough to matter.
+> // TODO
 
 #### cta
 
@@ -26,29 +26,53 @@ finalized copy for each section.
 
 [ngrok](https://ngrok.com) · sr software engineer · sep '25 - present
 
-we own what _must_ work - public api, sdks, domains, mail, and tls 
-certificates.
-
-rebuilding foundational systems to be faster, more secure, and honest about
-what they are.
+// TODO the tastiest blend of product and engineering. the culture is like second-dessert.
 
 ---
 
 ### work history
 
+// we can punt on this too.
+
 kong · sr software engineer · jan '22 - aug '25
 
-rebuilt authz, designed pats, and wrote the search query language from scratch.
+// TODO wdyl?
+// TODO authz / ip protection
+// TODO audit logging
+// TODO search, flink, kafka
+// TODO iam (social, sso)
+// TODO pats
+// TODO rbac
 
 nike · lead software engineer · apr '14 - dec '21
 
-from an empty datacenter to nike.com cutover in 17 weeks. then years of
-building the platforms too good to notice.
+// TODO: wdyl? each stage? we'll need to think about long vs short form.
+// it's okay if it's a little long. eight years and a handful of hats.
+
+// o.g. cms was the game. bit of a blend of systems engineering and app dev.
+// the most epic team lead duo you could hope for.
+
+// curiosity took me to systems, private cloud (ucs,vmware,openstack,foxbox,jabend,&co).
+
+// native cloud devops? yes please! lead a team? heck yeah!
+
+// in terms of tools... we have no tools. let's go build them! (contracts,
+alignment, fast iteration, and dev workflows - oh my).
+
+// managed airflow, data lake catalogging
+
+// k8s native compute platform, app registery.
 
 u.s. bank · system admin · oct '12 - apr '14
 
 turned manual deployments into something repeatable. shipped google's yellow
 search blades for call center and public search.
+
+u.s. army reserve · multi-role bridge platoon sergeant · mar '10 - aug '23
+
+// TODO leading
+// TODO humanity & collaboration
+// TODO refining your craft
 
 ---
 
