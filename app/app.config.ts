@@ -1,9 +1,8 @@
-import { defineAppConfig } from "nuxt/app";
-
 export default defineAppConfig({
 	profile: {
 		name: 'nick anderson',
-		proclamation: 'i make sure ideas survive long enough to matter. // TODO fix this, i dont like',
+		tagline: 'i make sure ideas survive long enough to matter.',
+		proclamation: '', // TODO
 	},
 	site: {
 		nav: [
