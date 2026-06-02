@@ -14,7 +14,7 @@ finalized copy for each section.
 
 #### career one-liner (low line)
 
-> // TODO
+> sr software engineer. platform, product, infrastructure - let's build a healthier internet.
 
 #### cta
 
@@ -26,42 +26,20 @@ finalized copy for each section.
 
 [ngrok](https://ngrok.com) · sr software engineer · sep '25 - present
 
-// TODO the tastiest blend of product and engineering. the culture is like second-dessert.
+the tastiest blend of product and platform. building things that matter to developers, at a company that still believes in it's core mission.
 
 ---
 
 ### work history
 
-// we can punt on this too.
-
 kong · sr software engineer · jan '22 - aug '25
 
-// TODO wdyl?
-// TODO authz / ip protection
-// TODO audit logging
-// TODO search, flink, kafka
-// TODO iam (social, sso)
-// TODO pats
-// TODO rbac
+api infrastructure, access control, and the unglamorous work that keeps distributed systems honest.
 
 nike · lead software engineer · apr '14 - dec '21
 
-// TODO: wdyl? each stage? we'll need to think about long vs short form.
-// it's okay if it's a little long. eight years and a handful of hats.
-
-// o.g. cms was the game. bit of a blend of systems engineering and app dev.
-// the most epic team lead duo you could hope for.
-
-// curiosity took me to systems, private cloud (ucs,vmware,openstack,foxbox,jabend,&co).
-
-// native cloud devops? yes please! lead a team? heck yeah!
-
-// in terms of tools... we have no tools. let's go build them! (contracts,
-alignment, fast iteration, and dev workflows - oh my).
-
-// managed airflow, data lake catalogging
-
-// k8s native compute platform, app registery.
+eight years, a handful of hats.
+cms to private cloud to developer platforms - each chapter built on the last.
 
 u.s. bank · system admin · oct '12 - apr '14
 
@@ -70,9 +48,8 @@ search blades for call center and public search.
 
 u.s. army reserve · multi-role bridge platoon sergeant · mar '10 - aug '23
 
-// TODO leading
-// TODO humanity & collaboration
-// TODO refining your craft
+thirteen years. crewmember to platoon sergeant - mastered the role before leading any of them.
+
 
 ---
 
