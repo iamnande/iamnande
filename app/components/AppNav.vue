@@ -37,7 +37,7 @@ const config = useAppConfig()
           </NuxtLink>
         </template>
         <a
-          href="https://github.com/iamnande/iamnande"
+          :href="config.site.vcs"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="source code"

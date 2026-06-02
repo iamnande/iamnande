@@ -1,3 +1,21 @@
+declare module '@nuxt/schema' {
+  interface AppConfig {
+    profile: {
+      name: string
+      tagline: string
+      proclamation: string
+    }
+    site: {
+      vcs: string
+      nav: Array<{
+        name: string
+        to: string
+        tooltip?: string
+      }>
+    }
+  }
+}
+
 export default defineAppConfig({
 	profile: {
 		name: 'nick anderson',
@@ -5,6 +23,7 @@ export default defineAppConfig({
 		proclamation: '', // TODO
 	},
 	site: {
+		vcs: 'https://github.com/iamnande/iamnande',
 		nav: [
 			{ name: 'philosophy', to: '/philosophy' },
 			{ name: 'curriculum vitae', to: '/curriculum-vitae', tooltip: '↓ nick-anderson_resume.pdf' },
