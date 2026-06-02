@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const config = useAppConfig()
+const cvItem = config.site.nav.find(item => item.tooltip)
 </script>
 
 <template>
@@ -19,8 +20,8 @@ const config = useAppConfig()
           {{ item.name }}
         </NuxtLink>
       </nav>
-      <a href="#" class="font-mono text-xs text-accent/60 hover:text-accent transition-colors">
-        ↓ curriculum vitae.pdf
+      <a v-if="cvItem" href="#" class="font-mono text-xs text-accent/60 hover:text-accent transition-colors">
+        {{ cvItem.tooltip }}
       </a>
     </div>
   </footer>
