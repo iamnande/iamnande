@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@import "@fontsource-variable/geist-mono";
+@import "@fontsource/atkinson-hyperlegible";
+
+@theme {
+	--color-base: #101310;
+	--color-surface: #161c16;
+	--color-accent: #7a9e7e;
+	--color-fg: #dde8dd;
+
+	--font-mono: "Geist Mono Variable", monospace;
+	--font-reading: "Atkinson Hyperlegible", sans-serif;
+}
+
+html,
+body {
+	background-color: var(--color-base);
+	color: var(--color-fg);
+	font-family: var(--font-mono);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
