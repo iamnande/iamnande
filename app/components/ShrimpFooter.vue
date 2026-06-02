@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const config = useAppConfig()
-const cvItem = config.site.nav.find(item => item.tooltip)
+const downloadTooltip = config.site.nav.find(item => item.tooltip)?.tooltip
 </script>
 
 <template>
@@ -20,8 +20,8 @@ const cvItem = config.site.nav.find(item => item.tooltip)
           {{ item.name }}
         </NuxtLink>
       </nav>
-      <a v-if="cvItem" href="#" class="font-mono text-xs text-accent/60 hover:text-accent transition-colors">
-        {{ cvItem.tooltip }}
+      <a v-if="downloadTooltip" href="#" class="font-mono text-xs text-accent/60 hover:text-accent transition-colors">
+        {{ downloadTooltip }}
       </a>
     </div>
   </footer>
