@@ -1,21 +1,3 @@
-declare module '@nuxt/schema' {
-  interface AppConfig {
-    profile: {
-      name: string
-      tagline: string
-      proclamation: string
-    }
-    site: {
-      vcs: string
-      nav: Array<{
-        name: string
-        to: string
-        tooltip?: string
-      }>
-    }
-  }
-}
-
 export default defineAppConfig({
 	profile: {
 		name: 'nick anderson',
