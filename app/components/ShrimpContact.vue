@@ -11,6 +11,8 @@ const config = useAppConfig()
         v-for="item in config.contact"
         :key="item.label"
         :href="item.url"
+        :target="item.url.startsWith('mailto:') ? undefined : '_blank'"
+        :rel="item.url.startsWith('mailto:') ? undefined : 'noopener noreferrer'"
         class="block font-mono text-sm text-fg/60 hover:text-fg transition-colors"
       >↗ {{ item.label }}</a>
     </div>

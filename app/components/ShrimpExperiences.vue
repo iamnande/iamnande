@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const config = useAppConfig()
 
-const currentExperience = config.profile.experiences.find((e: any) => !e.endDate)
-const pastExperiences = config.profile.experiences.filter((e: any) => e.endDate)
+const currentExperience = config.profile.experiences.find(e => !e.endDate)
+const pastExperiences = config.profile.experiences.filter(e => !!e.endDate)
 
 function formatPeriod(startDate: string, endDate?: string | null): string {
   const fmt = (ym: string) => {
