@@ -6,19 +6,19 @@ title: philosophy
 
 ## on becoming
 
-you've been a part of "institutions" in various parts of your world.
+resist the solution. understand the problem. its scope. its weight.
 
-school, faith (tacet beliefs), military, large companies, startups - but what impact has this lived experience made on me?
+growth isn't forged in the abstract. it is built with intention, with tangible
+experiences - real systems, real people, real failure.
 
-you left higher education, why? what does learning look like to you now as a result?
+you can read the map. you still have to walk the ground.
 
-you left a faith - what guides you? what questions have you asked yourself? how did those answers influence your decision making about your career? or technology as a whole?
+errors of the mind are endless; they multiply as they travel.
 
-you left the military, why? what experiences shape how you view the world, technology, or your career?
+every institution, every deep end, every encounter with the unfiltered weight
+of being human - none of it was detour. it was formation.
 
-each company and role has had it's own share of learnings, fond memories, exciting moments, wins, losses, and even dispair.
-
-this website exists to bring forth a refined impression of these experiences in such a way the reader can glean not only information, such as a resume, but the impacts along the way which made me - me.
+show up. be present. the map didn't come first. the ground did.
 
 ## on voice
 
