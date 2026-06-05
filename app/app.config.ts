@@ -22,31 +22,38 @@ export default defineAppConfig({
 			{
 				company: 'nike',
 				role: 'lead software engineer',
-				startDate: '2022-01',
-				endDate: '2025-08',
-				summary: 'identity & access management, distributed-systems, and platforms supporting AI/API/Event gateway products.'
+				startDate: '2019-10',
+				endDate: '2021-12',
+				summary: '', // TODO: dev tools, mdcat, paas, app registry, service mesh
 			},
 			{
 				company: 'nike',
 				role: 'software engineer manager',
-				startDate: '2022-01',
-				endDate: '2025-08',
-				summary: 'identity & access management, distributed-systems, and platforms supporting AI/API/Event gateway products.'
+				startDate: '2018-09',
+				endDate: '2019-10',
+				summary: '', // TODO
 			},
 			{
 				company: 'nike',
 				role: 'senior software engineer',
-				startDate: '2022-01',
-				endDate: '2025-08',
-				summary: 'platform automation'
+				startDate: '2014-04',
+				endDate: '2018-09',
+				summary: '', // TODO
 			},
 			{
 				company: 'u.s. bank',
 				role: 'system administrator',
-				startDate: '2012-08',
+				startDate: '2012-03',
 				endDate: '2014-04',
 				summary: 'automating enterprise CMS and search systems for usbank.com and call centers.'
-			}
+			},
+			{
+				company: 'u.s. army reserve',
+				role: 'multi-role bridge company platoon sergeant',
+				startDate: '2010-03',
+				endDate: '2023-08',
+				summary: '', // TODO
+			},
 		],
 	},
 	projects: [
