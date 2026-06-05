@@ -9,11 +9,17 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["better-sqlite3", "@parcel/watcher", "esbuild"]
+  },
   "dependencies": {
     "@fontsource-variable/geist-mono": "^5.2.8",
     "@fontsource/atkinson-hyperlegible": "^5.2.8",
+    "@nuxt/content": "^3.14.0",
     "@nuxt/ui": "^4.8.1",
+    "@nuxtjs/mdc": "^0.22.0",
     "@vueuse/core": "^14.3.0",
+    "better-sqlite3": "^12.10.0",
     "motion-v": "^2.2.1",
     "nuxt": "^4.4.6",
     "vue": "^3.5.34",
