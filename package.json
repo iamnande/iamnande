@@ -9,9 +9,6 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": ["better-sqlite3", "@parcel/watcher", "esbuild"]
-  },
   "dependencies": {
     "@fontsource-variable/geist-mono": "^5.2.8",
     "@fontsource/atkinson-hyperlegible": "^5.2.8",
