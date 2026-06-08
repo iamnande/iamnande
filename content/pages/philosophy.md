@@ -24,9 +24,12 @@ show up. be present. the map didn't come first. the ground did.
 
 we are the 99, and we build for each other.
 
-you believe it's important to have a voice, use this voice for purpose, to elevate underrepresented principles & people.
+a voice without purpose is noise.
 
-in an age of "content", misinformation, and most especially ever-growing opportunities to collaborate with others also chasing after a better world - silence allows for distrust, uncomfortable interactions, and guilt to fester.
+silence doesn't stay neutral. it cedes ground. the weathervane doesn't cease
+movement because you stepped away - it moves toward whoever shows up.
+
+speaking out is foundational. state your case. elevate what isn't being heard.
 
 ## on beliefs
 
