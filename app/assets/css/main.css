@@ -5,10 +5,10 @@
 @import "@fontsource/atkinson-hyperlegible";
 
 @theme {
-	--color-base: #101310;
-	--color-surface: #161c16;
-	--color-accent: #91bc91;
-	--color-fg: #dde8dd;
+	--color-base: #1e2326;
+	--color-surface: #272e33;
+	--color-accent: #a7c080;
+	--color-fg: #d3c6aa;
 
 	--font-mono: "Geist Mono Variable", monospace;
 	--font-reading: "Atkinson Hyperlegible", sans-serif;
