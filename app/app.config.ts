@@ -11,8 +11,7 @@ export default defineAppConfig({
         role: "sr software engineer",
         startDate: "2025-09",
         endDate: null,
-        summary:
-          "the tastiest blend of product and platform. building things that matter to developers, ...",
+        summary: "real builders. a mission worth shipping toward. it shows.",
       },
       {
         company: "kong",
@@ -20,7 +19,7 @@ export default defineAppConfig({
         startDate: "2022-01",
         endDate: "2025-08",
         summary:
-          "identity & access management, distributed-systems, and platforms supporting AI/API/Event gateway products.",
+          "the enterprise gateway. identity, authz, distributed-systems. publicly, at scale. systems hold, or don't.",
       },
       {
         company: "nike",
@@ -93,7 +92,11 @@ export default defineAppConfig({
     cv: { label: "↓ nick-anderson_resume.pdf", href: "#" },
     nav: [
       { name: "philosophy", to: "/philosophy" },
-      { name: "colophon", to: "https://github.com/iamnande/iamnande/discussions/13", external: true },
+      {
+        name: "colophon",
+        to: "https://github.com/iamnande/iamnande/discussions/13",
+        external: true,
+      },
     ],
   },
 });
