@@ -20,7 +20,14 @@ const config = useAppConfig()
       </NuxtLink>
       <div class="flex items-center gap-8">
         <template v-for="item in config.site.nav" :key="item.to">
-          <UTooltip v-if="item.tooltip" :text="item.tooltip">
+          <a
+            v-if="item.external"
+            :href="item.to"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-mono text-sm text-fg/60 hover:text-fg transition-colors"
+          >{{ item.name }}</a>
+          <UTooltip v-else-if="item.tooltip" :text="item.tooltip">
             <NuxtLink
               :to="item.to"
               class="font-mono text-sm text-fg/60 hover:text-fg transition-colors"
@@ -31,9 +38,13 @@ const config = useAppConfig()
           <NuxtLink
             v-else
             :to="item.to"
-            class="font-mono text-sm text-fg/60 hover:text-fg transition-colors"
+            class="inline-flex items-center gap-1.5 font-mono text-sm text-fg/60 hover:text-fg transition-colors"
           >
             {{ item.name }}
+            <span
+              v-if="item.badge"
+              class="font-mono text-xs text-fg/30 bg-surface px-1.5 py-0.5 rounded"
+            >{{ item.badge }}</span>
           </NuxtLink>
         </template>
         <a
