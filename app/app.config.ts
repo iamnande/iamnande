@@ -3,7 +3,7 @@ export default defineAppConfig({
     name: "nick anderson",
     tagline: "iron won't heat itself.",
     subheading:
-      "software engineer. infrastructure, distributed systems, platforms, products - let's build a healthier internet.",
+      "software engineer. infrastructure, distributed systems, platforms, products -- let's build a healthier internet.",
     cta: "let's connect.",
     experiences: [
       {
@@ -26,21 +26,24 @@ export default defineAppConfig({
         role: "lead software engineer",
         startDate: "2019-10",
         endDate: "2021-12",
-        summary: "", // TODO: dev tools, mdcat, paas, app registry, service mesh
+        summary:
+          "built THE platform. paas, routing, certs, the works. go, containers, terraform, aws -- new ground.",
       },
       {
         company: "nike",
         role: "software engineer manager",
         startDate: "2018-09",
         endDate: "2019-10",
-        summary: "", // TODO
+        summary:
+          "cloud architecture, ci/cd, the account model that scaled. security protocols at the governance level. half the team r&d, half embedded. adoption by presence, not mandate.",
       },
       {
         company: "nike",
         role: "senior software engineer",
         startDate: "2014-04",
         endDate: "2018-09",
-        summary: "", // TODO
+        summary:
+          "cms to platform engineer. moved nike.com from vendor to infrastructure we owned. slept under the desk. nande was born.",
       },
       {
         company: "u.s. bank",
@@ -48,14 +51,15 @@ export default defineAppConfig({
         startDate: "2012-03",
         endDate: "2014-04",
         summary:
-          "automating enterprise CMS and search systems for usbank.com and call centers.",
+          "started with teamsite and a myspace profile. automated everything in reach -- deployments, identity, marketing sql with the dba team. first taste of what's possible. always present.",
       },
       {
         company: "u.s. army reserve",
         role: "multi-role bridge company platoon sergeant",
         startDate: "2010-03",
         endDate: "2023-08",
-        summary: "", // TODO
+        summary:
+          "people first, then the mission. pv2 to platoon sergeant, every role earned. three simultaneous rafts in blackout. trained operators across units and nations. achieved in spite of. life was the lesson.",
       },
     ],
   },
@@ -71,7 +75,7 @@ export default defineAppConfig({
       name: "rawr",
       tags: ["rust", "authz", "infrastructure"],
       description:
-        "righteous authorization with rust. pluggable authz system - in-memory for single process, distributed when you need it. on pause, not abandoned. shrimp is life.",
+        "righteous authorization with rust. pluggable authz system -- in-memory for single process, distributed when you need it. on pause, not abandoned. shrimp is life.",
       url: "https://github.com/iamnande/rawr",
     },
     {
