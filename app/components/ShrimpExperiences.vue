@@ -10,7 +10,7 @@ function formatPeriod(startDate: string, endDate?: string | null): string {
     const d = new Date(+year, +month - 1)
     return `${d.toLocaleDateString('en-US', { month: 'short' }).toLowerCase()} '${year.slice(2)}`
   }
-  return `${fmt(startDate)} - ${endDate ? fmt(endDate) : 'present'}`
+  return `${fmt(startDate)} -- ${endDate ? fmt(endDate) : 'present'}`
 }
 </script>
 
