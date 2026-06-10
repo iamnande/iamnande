@@ -1,9 +1,9 @@
 export default defineAppConfig({
   profile: {
     name: "nick anderson",
-    tagline: "iron won't heat itself.",
+    tagline: "iron does not heat itself.",
     subheading:
-      "software engineer. infrastructure, distributed systems, platforms, products -- let's build a healthier internet.",
+      "software engineer. infrastructure, distributed systems, platforms, products -- let's build a better internet.",
     cta: "let's connect.",
     experiences: [
       {
@@ -11,7 +11,8 @@ export default defineAppConfig({
         role: "sr software engineer",
         startDate: "2025-09",
         endDate: null,
-        summary: "real builders. a mission worth shipping toward. it shows.",
+        summary:
+          "the tastiest blend of products and people. increasing the pace of innovation on the internet. shrimp is life.",
       },
       {
         company: "kong",
@@ -19,7 +20,7 @@ export default defineAppConfig({
         startDate: "2022-01",
         endDate: "2025-08",
         summary:
-          "the enterprise gateway. identity, authz, distributed-systems. publicly, at scale. systems hold, or don't.",
+          "reformed THE enterprise gateway into a hyper-growth giant. identity, authorization, distributed systems. everything a platform needs.",
       },
       {
         company: "nike",
@@ -27,7 +28,7 @@ export default defineAppConfig({
         startDate: "2019-10",
         endDate: "2021-12",
         summary:
-          "built THE platform. paas, routing, certs, the works. go, containers, terraform, aws -- new ground.",
+          "built THE engine (sdks, terraform providers, paas) capable of running the matrix.",
       },
       {
         company: "nike",
@@ -35,7 +36,7 @@ export default defineAppConfig({
         startDate: "2018-09",
         endDate: "2019-10",
         summary:
-          "cloud architecture, ci/cd, the account model that scaled. security protocols at the governance level. half the team r&d, half embedded. adoption by presence, not mandate.",
+          "devops & infrastructure. identity, networking, and observability models which scaled thousands of cloud accounts. half the team r&d, half embedded. adoption by presence & collaboration, not mandate.",
       },
       {
         company: "nike",
@@ -43,7 +44,7 @@ export default defineAppConfig({
         startDate: "2014-04",
         endDate: "2018-09",
         summary:
-          "cms to platform engineer. moved nike.com from vendor to infrastructure we owned. slept under the desk. nande was born.",
+          "converted from cms to platform engineer. moved nike.com off vendor-managed hardware to self-managed infrastructure (ucs/vmware+openstack). 17 weeks from boxes open to cutover. iamnande was born (iykyk).",
       },
       {
         company: "u.s. bank",
@@ -51,15 +52,15 @@ export default defineAppConfig({
         startDate: "2012-03",
         endDate: "2014-04",
         summary:
-          "started with teamsite and a myspace profile. automated everything in reach -- deployments, identity, marketing sql with the dba team. first taste of what's possible. always present.",
+          "started with teamsite and a myspace profile. stood up usbank.com & call-center search via google search appliance. automated everything in reach -- deployments, identity, audit reports. first taste of what's possible.",
       },
       {
         company: "u.s. army reserve",
-        role: "multi-role bridge company platoon sergeant",
+        role: "platoon sergeant, multi-role bridge",
         startDate: "2010-03",
         endDate: "2023-08",
         summary:
-          "people first, then the mission. pv2 to platoon sergeant, every role earned. three simultaneous rafts in blackout. trained operators across units and nations. achieved in spite of. life was the lesson.",
+          'kicked a TON of rocks before i led. learned how to "life" with the finest of engineers. trained hundres of humans and dozens of operators across units and nations.',
       },
     ],
   },
@@ -68,21 +69,21 @@ export default defineAppConfig({
       name: "cardmod",
       tags: ["go", "api", "ff8", "gaming"],
       description:
-        "ff8 magic calculation api. backend done. nuxt frontend coming.",
+        "you ever wish a highly-specific game companion app existed to help craft character builds? i definitely didn't build my own calculator for card to magic refinement calculations for such a purpose. (shhh, don't tell my other projects)",
       url: "https://github.com/iamnande/cardmod",
     },
     {
       name: "rawr",
       tags: ["rust", "authz", "infrastructure"],
       description:
-        "righteous authorization with rust. pluggable authz system -- in-memory for single process, distributed when you need it. on pause, not abandoned. shrimp is life.",
+        "righteous authorization with rust -- like the hipster gods intended. lightning fast (20M checks/s), pluggable component architecture -- in-memory by default, distributed when you need it. no za for you.",
       url: "https://github.com/iamnande/rawr",
     },
     {
       name: "homelab",
       tags: ["nix", "infrastructure", "self-hosted"],
       description:
-        "the journey to a home lab worth fighting for. more docs than code right now, that's half the point.",
+        "the journey to a home lab worth fighting for. more docs than code right now.",
       url: "https://github.com/iamnande/homelab",
     },
   ],
@@ -93,7 +94,6 @@ export default defineAppConfig({
   ],
   site: {
     vcs: "https://github.com/iamnande/iamnande",
-    cv: { label: "↓ nick-anderson_resume.pdf", href: "#" },
     nav: [
       { name: "philosophy", to: "/philosophy" },
       {
