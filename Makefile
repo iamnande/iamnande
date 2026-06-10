@@ -1,61 +1,33 @@
-.DEFAULT_GOAL := help
-
 # core
-APP_NAME := iamnande
-WORKDIR  := $(shell pwd)
-SHELL    := /usr/bin/env bash
+.DEFAULT_GOAL := help
+WORKDIR       := $(shell pwd)
+SHELL         := /usr/bin/env bash
 
-APP_LOG_FMT := `/bin/date "+%Y-%m-%d %H:%M:%S %z [$(APP_NAME)]"`
+# vcs info
+VCS_COMMIT   := $(shell git rev-parse --short=7 HEAD)
+VCS_IS_DIRTY := $(shell test -n "$$(git status --porcelain)" && echo "-dirty")
 
-# --------------------------------------------------
-# Help
-# --------------------------------------------------
+# colors
+COLOR_CYAN    := \033[0;36m
+COLOR_GREEN   := \033[0;32m
+COLOR_MAGENTA := \033[0;35m
+COLOR_YELLOW  := \033[0;33m
+COLOR_NONE    := \033[0m
+
+# project info
+OWNER_NAME   := iamnande
+PROJECT_NAME := iamnande
+PROJECT_REF  := $(VCS_COMMIT)$(VCS_IS_DIRTY)
+
+# modules
+include mk/log.mk
+include mk/dev.mk
+
 .PHONY: help
 help: ## help: display available targets
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
-		awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m make %-20s -> %s\n\033[0m", $$1, $$2}'
-
-# --------------------------------------------------
-# Setup Targets
-# --------------------------------------------------
-.PHONY: setup
-setup: ## setup: install dependencies
-	@echo $(APP_LOG_FMT) "installing dependencies"
-	@pnpm install
-
-.PHONY: setup-clean
-setup-clean: ## setup: clean and reinstall dependencies
-	@echo $(APP_LOG_FMT) "cleaning and reinstalling dependencies"
-	@rm -rf node_modules .nuxt
-	@pnpm install
-
-# --------------------------------------------------
-# Dev Targets
-# --------------------------------------------------
-.PHONY: dev
-dev: ## dev: start development server
-	@echo $(APP_LOG_FMT) "starting development server"
-	@pnpm dev
-
-.PHONY: build
-build: ## dev: build for production
-	@echo $(APP_LOG_FMT) "building for production"
-	@pnpm build
-
-.PHONY: preview
-preview: build ## dev: preview production build
-	@echo $(APP_LOG_FMT) "previewing production build"
-	@pnpm preview
-
-# --------------------------------------------------
-# Clean Targets
-# --------------------------------------------------
-.PHONY: clean
-clean: ## clean: remove build artifacts
-	@echo $(APP_LOG_FMT) "removing build artifacts"
-	@rm -rf .nuxt .output
-
-.PHONY: clean-all
-clean-all: clean ## clean: remove build artifacts and dependencies
-	@echo $(APP_LOG_FMT) "removing build artifacts and dependencies"
-	@rm -rf node_modules
+	@echo -e "${COLOR_GREEN}=================================================================================${COLOR_NONE}"
+	@echo -e "                    [ ${COLOR_MAGENTA}$(OWNER_NAME)${COLOR_YELLOW}/${COLOR_MAGENTA}$(PROJECT_NAME)${COLOR_NONE} - ${COLOR_MAGENTA}$(PROJECT_REF)${COLOR_NONE} ]"
+	@echo -e "${COLOR_GREEN}=================================================================================${COLOR_NONE}"
+	@grep -h -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort -k1 | \
+	        awk 'BEGIN {FS = ":.*?## "} \
+	        {printf "${COLOR_CYAN}%-12s${COLOR_NONE} %s %s\n", $$1, "    ..................................    ", $$2}'
