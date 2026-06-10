@@ -19,4 +19,4 @@ station with care and mentorship.
 
 source for [nick.morethq.com](https://nick.morethq.com)
 
-[philosophy](./docs/philosophy.md) · [colophon](./docs/colophon.md) · [linkedin](https://www.linkedin.com/in/iamnande)
+[philosophy](./content/pages/philosophy.md) · [colophon](./content/pages/colophon.md) · [linkedin](https://www.linkedin.com/in/iamnande)
