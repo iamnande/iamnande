@@ -90,7 +90,7 @@ export default defineAppConfig({
   contact: [
     { label: "linkedin", url: "https://www.linkedin.com/in/iamnande" },
     { label: "github", url: "https://github.com/iamnande" },
-    { label: "email", url: "mailto:nick.mhq.synthetic350@passmail.net" },
+    { label: "email", url: "mailto:nick@morethq.com" },
   ],
   site: {
     vcs: "https://github.com/iamnande/iamnande",
