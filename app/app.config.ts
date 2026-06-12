@@ -1,10 +1,10 @@
 export default defineAppConfig({
   profile: {
     name: "nick anderson",
-    tagline: "iron does not heat itself.",
+    tagline: "building systems between systems",
     subheading:
       "software engineer. infrastructure, distributed systems, platforms, products -- let's build a better internet.",
-    cta: "let's connect.",
+    cta: "want to build together?",
     experiences: [
       {
         company: "ngrok",
