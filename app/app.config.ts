@@ -3,7 +3,7 @@ export default defineAppConfig({
     name: "nick anderson",
     tagline: "building systems between systems",
     subheading:
-      "software engineer. infrastructure, distributed systems, platforms, products -- let's build a better internet.",
+      "platform engineer. distributed systems. products. let's build a better internet.",
     cta: "want to build together?",
     experiences: [
       {
@@ -12,7 +12,7 @@ export default defineAppConfig({
         startDate: "2025-09",
         endDate: null,
         summary:
-          "the tastiest blend of products and people. increasing the pace of innovation on the internet. shrimp is life.",
+          "admin team. if it's not routing or data, it's probably us. currently shipping the next-generation of ngrok identity & access management.",
       },
       {
         company: "kong",
@@ -20,7 +20,7 @@ export default defineAppConfig({
         startDate: "2022-01",
         endDate: "2025-08",
         summary:
-          "reformed THE enterprise gateway into a hyper-growth giant. identity, authorization, distributed systems. everything a platform needs.",
+          "fixed authorization when it broke under enterprise load, then rebuilt it right. shipped search -- cross-product, near-real-time, from ad-hoc client filtering to a centralized index. shipped pats as the platform's machine-auth story. four years of foundational work that made konnect an enterprise product.",
       },
       {
         company: "nike",
@@ -28,7 +28,7 @@ export default defineAppConfig({
         startDate: "2019-10",
         endDate: "2021-12",
         summary:
-          "built THE engine (sdks, terraform providers, paas) capable of running the matrix.",
+          "three bets: a paas for standardized deployment across thousands of aws accounts, a data catalog for ai/ml flow discovery enterprise-wide, and the sdks, terraform providers, and cli (nikectl) that made adoption stick.",
       },
       {
         company: "nike",
@@ -60,7 +60,7 @@ export default defineAppConfig({
         startDate: "2010-03",
         endDate: "2023-08",
         summary:
-          'kicked a TON of rocks before i led. learned how to "life" with the finest of engineers. trained hundres of humans and dozens of operators across units and nations.',
+          'kicked a TON of rocks before i led. learned how to "life" with the finest of engineers. trained hundreds of humans and dozens of operators across units and nations.',
       },
     ],
   },
