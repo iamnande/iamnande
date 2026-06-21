@@ -1,0 +1,29 @@
+hero:
+  title: building systems between systems
+  description: platform engineer. distributed systems. products. let's build a better internet.
+  orientation: horizontal
+  image:
+    source: /me.jpg
+    alt: oh, hi. it's me. my face, that is. dot. jpg.
+  actions:
+    - label: want to build together?
+      to: /contact
+      color: neutral
+
+sections:
+  - id: enron
+    title: current role
+    description: ngrok
+    separator: i-lucide-briefcase
+  - id: cred
+    title: work experience
+    separator: i-lucide-history
+  - id: whip
+    title: dev setup
+    description: from hardware to software. everything i use to ship.
+    separator: i-lucide-laptop
+
+skills:
+  - title: Go
+    description: digging holes and dodging dynamite since 2016
+    icon: i-lucide-rocker

@@ -1,0 +1,20 @@
+name: iamnande
+
+seo:
+  title: nick anderson
+  description: iamnande
+
+navigation:
+  header:
+    - label: blog
+      to: '#blog_coming-soon'
+    - label: projects
+      to: https://github.com/iamnande?tab=repositories&q=&type=public&language=&sort=
+      external: true
+      target: _blank
+    - label: philosophy
+      to: /philosophy
+    - label: colophon
+      to: https://github.com/iamnande/iamnande/discussions/13
+      external: true
+      target: _blank

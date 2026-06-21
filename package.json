@@ -14,14 +14,17 @@
     "@fontsource-variable/geist-mono": "^5.2.8",
     "@fontsource/atkinson-hyperlegible": "^5.2.8",
     "@nuxt/content": "^3.14.0",
-    "@nuxt/ui": "^4.8.1",
+    "@nuxt/ui": "^4.8.2",
     "@nuxtjs/mdc": "^0.22.0",
     "@vueuse/core": "^14.3.0",
     "better-sqlite3": "^12.10.0",
-    "motion-v": "^2.2.1",
-    "nuxt": "^4.4.6",
-    "vue": "^3.5.34",
-    "vue-router": "^5.0.7"
+    "motion-v": "^2.3.0",
+    "nuxt": "^4.4.8",
+    "vue": "^3.5.38",
+    "vue-router": "^5.1.0"
   },
-  "packageManager": "pnpm@11.6.0+sha512.9a36518224080c6fe5165afdcfe79bfa118c29be703f3f462b1e32efe1e98e47e8750b148e08286250aad4113cc7993ca413c4e2cd447752708c2ee5751bc95f"
+  "packageManager": "pnpm@11.6.0+sha512.9a36518224080c6fe5165afdcfe79bfa118c29be703f3f462b1e32efe1e98e47e8750b148e08286250aad4113cc7993ca413c4e2cd447752708c2ee5751bc95f",
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.112"
+  }
 }

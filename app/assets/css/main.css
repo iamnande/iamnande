@@ -5,52 +5,67 @@
 @import "@fontsource/atkinson-hyperlegible";
 
 @theme {
-	--color-base: #1e2326;
-	--color-surface: #272e33;
-	--color-accent: #a7c080;
-	--color-fg: #d3c6aa;
+  /*  why everforest? well, why not? it's my ride-or-die. catppuccin tried.
+      seemed a better cohesive palette to work with i find pleasing. after all,
+      this is _my_ platform. eventually we can get freaky with a custom
+      palette. today is not that day.
+  */
+  /* background */
+  --color-dark-background: #1e2326;
 
-	--font-mono: "Geist Mono Variable", monospace;
-	--font-reading: "Atkinson Hyperlegible", sans-serif;
+  /* surfaces */
+  --color-dark-surface:          #272e33;
+  --color-dark-surface-elevated: #2e383c;
+  --color-dark-surface-accented: #374145;
+
+  /* foregrounds */
+  --color-light-background:        #d3c6aa;
+  --color-light-background-muted:  #9da9a0;
+  --color-light-background-dimmed: #7a8478;
+
+  /* accents */
+  --color-accent:        #a7c080;
+  --color-accent-muted:  #8fa868;
+  --color-accent-dimmed: #71894f;
+
+  /*
+    oh. my. gosh. becky! look at his fonts.
+  */
+  /* our font */
+  --font-ours: "Geist Mono Variable", monospace;
+  --font-sans: "Geist Mono Variable", monospace;
+  --font-serif: "Geist Mono Variable", monospace;
+  --font-mono: "Geist Mono Variable", monospace;
+
+  /* our font for reading */
+  --font-ours-for-reading: "Atkinson Hyperlegible", sans-serif;
+
+  /* container */
+  --container-8xl: 90rem;
 }
 
-@keyframes fade-up {
-	from {
-		opacity: 0;
-		transform: translateY(10px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
+:root {
+  --ui-primary:     var(--color-accent);
 
-.fade-up {
-	opacity: 0;
-	animation: fade-up 0.4s ease forwards;
-}
+  --ui-bg:          var(--color-dark-background);
+  --ui-bg-muted:    var(--color-dark-surface);
+  --ui-bg-elevated: var(--color-dark-surface-elevated);
+  --ui-bg-accented: var(--color-dark-surface-accented);
+  --ui-bg-inverted: var(--color-light-background);
 
-.hero-stagger > *:nth-child(1) { animation-delay: 0ms; }
-.hero-stagger > *:nth-child(2) { animation-delay: 120ms; }
-.hero-stagger > *:nth-child(3) { animation-delay: 220ms; }
+  --ui-text:             var(--color-light-background);
+  --ui-text-muted:       var(--color-light-background-muted);
+  --ui-text-dimmed:      var(--color-light-background-dimmed);
+  --ui-text-highlighted: var(--color-light-background-muted);
+  --ui-text-inverted:    var(--color-dark-background);
 
-.page-enter-active,
-.page-leave-active {
-	transition: opacity 0.1s ease;
-}
+  --ui-border:          var(--color-dark-surface-elevated);
+  --ui-border-muted:    var(--color-dark-surface);
+  --ui-border-accented: var(--color-dark-surface-accented);
+  --ui-border-inverted: var(--color-light-background);
 
-.page-enter-from,
-.page-leave-to {
-	opacity: 0;
-}
+  --ui-radius:    var(--radius-sm);
+  --ui-container: var(--container-6xl);
 
-html,
-body {
-	background-color: var(--color-base);
-	color: var(--color-fg);
-	font-family: var(--font-mono);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-variant-ligatures: none;
-	font-feature-settings: "liga" 0, "calt" 0;
+  --ui-container: var(--container-8xl);
 }
