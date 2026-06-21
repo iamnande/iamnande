@@ -24,14 +24,17 @@ incorrect models compound. the longer they travel, the more they cost.
 
 the work outlasts the worker. build like it will.
 
-every institution, every deep end, every encounter with the unfiltered weight
-of being human - none of it was detour. it was formation.
+every institution, every deep end, every encounter with the unfiltered weight of
+being human - none of it was detour. it was formation.
+
+---
 
 ## on beliefs
 
 humanity is everything - protect it.
 
-technical and industrial advances illuminate. they also expose. the tool does not care. you do.
+technical and industrial advances illuminate. they also expose. the tool does
+not care. you do.
 
 unconditional dignity. unwavering pursuit of an elevated human experience.
 technology is no more than the medium.
@@ -40,6 +43,6 @@ technical depth is the grease. YOU give it meaning.
 
 hoarded knowledge stalls. give it wings.
 
-tailor the message. meet people where they are. we have the opportunity to
-bring forth comfort in a world of chaos, with bloody WORDS. do not squander
-more than you must.
+tailor the message. meet people where they are. we have the opportunity to bring
+forth comfort in a world of chaos, with bloody WORDS. do not squander more than
+you must.

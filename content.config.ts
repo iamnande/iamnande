@@ -1,4 +1,5 @@
-import { defineContentConfig, defineCollection, z } from '@nuxt/content'
+import { defineContentConfig, defineCollection } from '@nuxt/content'
+import { z } from 'zod'
 
 export default defineContentConfig({
   collections: {
@@ -42,9 +43,17 @@ export default defineContentConfig({
         })),
       }),
     }),
-    content: defineCollection({
+    blog: defineCollection({
       type: 'page',
-      source: '**/*.md',
+      source: 'blog/**/*.md',
+    }),
+    pages: defineCollection({
+      type: 'page',
+      source: '*.md', 
+    }),
+    projects: defineCollection({
+      type: 'page',
+      source: 'projects/**/*.md',
     }),
   },
 })

@@ -34,9 +34,7 @@ useSeoMeta({
     </template>
   </UHeader>
 
-  <UMain>
-    <slot />
-  </UMain>
+  <slot />
 
   <MHQFooter />
 </template>

@@ -10,27 +10,27 @@ if (!home.value) {
     fatal: true,
   });
 }
-
-console.log("home data: ", home.value);
 </script>
 
 <template>
-  <UPageHero
-    :title="home.hero.title"
-    :description="home.hero.description"
-    orientation="horizontal"
-    :links="home.hero.actions"
-    class="lg:pt-50"
-  >
-    <div class="flex justify-center">
-      <img
-        :src="home.hero.image.source"
-        :alt="home.hero.image.alt"
-        class="w-100 rounded-4xl shadow-2xl ring ring-default"
-        loading="lazy"
-      />
-    </div>
-  </UPageHero>
+  <UMain>
+    <UPageHero
+      :title="home.hero.title"
+      :description="home.hero.description"
+      orientation="horizontal"
+      :links="home.hero.actions"
+      class="lg:pt-50"
+    >
+      <div class="flex justify-center">
+        <img
+          :src="home.hero.image.source"
+          :alt="home.hero.image.alt"
+          class="w-100 rounded-4xl shadow-2xl ring ring-default"
+          loading="lazy"
+        />
+      </div>
+    </UPageHero>
 
-  <!-- TODO: sections -->
+    <!-- TODO: sections -->
+  </UMain>
 </template>
