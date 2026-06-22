@@ -1,20 +1,41 @@
-name: iamnande
+name: nick anderson
+tagline: building systems between systems
 
-seo:
-  title: nick anderson
-  description: iamnande
+contact:
+  email: nick@morethq.com
+  github: iamnande
+  linkedin: iamnande
 
-navigation:
+nav:
+  items:
+    blog:
+      title: blog
+      path: '/#coming-soon'
+      hidden: true
+      comingSoon: true
+
+    colophon:
+      title: colophon
+      url: 'https://github.com/iamnande/iamnande/discussions/13'
+      external: true
+
+    philosophy:
+      title: philosophy
+      path: '/philosophy'
+
+    projects:
+      title: projects
+      url: 'https://github.com/iamnande?tab=repositories&type=public'
+      external: true
+
   header:
-    - label: blog
-      to: '#blog_coming-soon'
-    - label: projects
-      to: https://github.com/iamnande?tab=repositories&q=&type=public&language=&sort=
-      external: true
-      target: _blank
-    - label: philosophy
-      to: /philosophy
-    - label: colophon
-      to: https://github.com/iamnande/iamnande/discussions/13
-      external: true
-      target: _blank
+    - philosophy
+    - colophon
+    - projects
+
+  footer:
+    columns:
+      - label: nick anderson
+        items:
+          - philosophy
+          - projects

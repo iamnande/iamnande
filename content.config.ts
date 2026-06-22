@@ -8,17 +8,27 @@ export default defineContentConfig({
       source: 'site.yaml',
       schema: z.object({
         name: z.string(),
-        seo: z.object({
-          title: z.string(),
-          description: z.string(),
+        tagline: z.string(),
+        contact: z.object({
+          email: z.string(),
+          github: z.string(),
+          linkedin: z.string(),
         }),
-        navigation: z.object({
-          header: z.array(z.object({
-            label: z.string(), // philosophy
-            to: z.string(), // e.g. "/philosophy"
-            external: z.boolean(), // true
-            target: z.string(), // e.g. "_blank"
+        nav: z.object({
+          items: z.record(z.string(), z.object({
+            title: z.string(), // philosophy
+            path: z.string().optional(), // e.g. "/philosophy"
+            url: z.string().optional(), // e.g. "https://foo.philosophy"
+            hidden: z.boolean(), // true
+            comingSoon: z.boolean(), // true
           })),
+          header: z.array(z.string()),
+          footer: z.object({
+            columns: z.array(z.object({
+              label: z.string(),
+              items: z.array(z.string()),
+            })),
+          }),
         }),
       })
     }),

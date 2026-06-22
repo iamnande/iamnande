@@ -1,21 +1,12 @@
 <script lang="ts" setup>
-const columns: FooterColumn[] = [
-  {
-    label: 'nick anderson',
-    children: [
-      {
-        label: 'philosophy',
-        to: '/philosophy',
-      },
-      {
-        label: 'colophon',
-        to: 'https://github.com/iamnande/iamnande/discussions/13',
-        external: true,
-        target: '_blank',
-      },
-    ],
-  },
-]
+interface Props {
+  nav: FooterColumn[]
+  tagline: string
+  contact: MHQContactInfo
+  socials: MHQSocialLink[]
+}
+
+const props = defineProps<Props>()
 </script>
 
 <template>
@@ -23,13 +14,11 @@ const columns: FooterColumn[] = [
     <template #top>
       <UContainer>
         <UFooterColumns
-          :columns="columns"
+          :columns="props.nav"
         >
           <template #right>
             <div class="flex flex-col items-end gap-4">
-              <p class="text-dimmed">
-                building systems between systems.
-              </p>
+              <p class="text-dimmed">{{ props.tagline }}</p>
 
               <UButton
                 icon="i-lucide-mail"
@@ -37,25 +26,22 @@ const columns: FooterColumn[] = [
                 color="primary"
                 variant="subtle"
                 aria-label="contact"
+                :to="`mailto:${props.contact.email}`"
               >
                 contact me
               </UButton>
 
               <div class="flex gap-2">
                 <UButton
-                  icon="i-simple-icons-github"
+                  v-for="social in socials"
+                  :key="social.label"
+                  :icon="social.icon"
                   size="md"
+                  color="neutral"
+                  variant="subtle"
+                  :aria-label="social.label"
+                  :to="social.href"
                   target="_blank"
-                  color="neutral"
-                  variant="subtle"
-                  aria-label="github"
-                />
-                <UButton
-                  icon="i-simple-icons-linkedin"
-                  size="md"
-                  color="neutral"
-                  variant="subtle"
-                  aria-label="linkedin"
                 />
               </div>
             </div>

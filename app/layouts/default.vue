@@ -1,34 +1,29 @@
 <script setup lang="ts">
-const { data: site } = await useAsyncData("site", () => {
-  return queryCollection("site").first();
-});
+const { site } = useSite()
+const { headerNav, footerNav } = useSiteNav()
+const contact = useContact()
+const socials = useSocials()
 
-const page = {
-  title: site?.seo?.title ?? "nick anderson",
-  description: site?.seo?.description ?? "iamnande",
-};
+const creepOnMyCode = `https://github.com/${contact.value.github}`
 
-useSeoMeta({
-  title: page.title,
-  ogTitle: page.title,
-  description: page.description,
-  ogDescription: page.description,
-});
+console.log("HEADER NAV: ", headerNav)
 </script>
 
 <template>
-  <UHeader :title="page.title">
-    <UNavigationMenu :items="site.navigation.header" />
+  <!-- TODO: move this to a component [title, nav, ref new code component] -->
+  <UHeader :title="site.name">
+    <UNavigationMenu :items="headerNav" />
 
     <template #right>
+      <!-- TODO: move this to a component, take computed code with it -->
       <UTooltip text="view the source" :kbds="['meta', 'G']">
         <UButton
           color="neutral"
           variant="ghost"
-          to="https://github.com/iamnande/iamnande"
           target="_blank"
+          :to="creepOnMyCode"
           icon="i-simple-icons-github"
-          aria-label="github"
+          aria-label="view source"
         />
       </UTooltip>
     </template>
@@ -36,5 +31,10 @@ useSeoMeta({
 
   <slot />
 
-  <MHQFooter />
+  <MHQFooter
+    :nav="footerNav"
+    :tagline="site.tagline"
+    :contact="contact"
+    :socials="socials"
+  />
 </template>

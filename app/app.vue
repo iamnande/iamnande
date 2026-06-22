@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const { loadSite } = useSite()
+
+await loadSite()
+</script>
 <template>
   <UApp>
     <NuxtRouteAnnouncer />
