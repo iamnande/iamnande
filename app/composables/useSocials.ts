@@ -3,7 +3,7 @@ import type { MHQSocialLink } from "~/types/contact"
 export const useSocials = () => {
   const contact = useContact()
 
-  return computed<MHQSocialLink[]>(() => [
+  const socials = computed<MHQSocialLink[]>(() => [
     {
       label: 'github',
       href: `https://github.com/${contact.value.github}`,
@@ -15,4 +15,13 @@ export const useSocials = () => {
       icon: 'i-simple-icons-linkedin',
     }
   ])
+
+  const getSocial = (label: string) => computed(() =>
+    socials.value.find(s => s.label === label)
+  )
+    
+  return {
+    socials,
+    getSocial,
+  }
 }

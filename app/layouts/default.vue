@@ -2,11 +2,8 @@
 const { site } = useSite()
 const { headerNav, footerNav } = useSiteNav()
 const contact = useContact()
-const socials = useSocials()
-
-const creepOnMyCode = `https://github.com/${contact.value.github}`
-
-console.log("HEADER NAV: ", headerNav)
+const { socials, getSocial} = useSocials()
+const source = getSocial('github')
 </script>
 
 <template>
@@ -21,8 +18,8 @@ console.log("HEADER NAV: ", headerNav)
           color="neutral"
           variant="ghost"
           target="_blank"
-          :to="creepOnMyCode"
-          icon="i-simple-icons-github"
+          :to="source.href"
+          :icon="source.icon"
           aria-label="view source"
         />
       </UTooltip>
