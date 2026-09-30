@@ -4,8 +4,7 @@ nick anderson.
 
 backend, platforms, distributed systems.
 
-currently at [ngrok](https://ngrok.com) - before that, kong, nike, and u.s.
-bank.
+currently at [ngrok](https://ngrok.com) - before that, kong, nike, and u.s. bank.
 
 more than a decade of building infrastructure that lets others build.
 i learned everything on the job - which means if it sucked for me to use, it
