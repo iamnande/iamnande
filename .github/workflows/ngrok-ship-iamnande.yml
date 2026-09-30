@@ -1,0 +1,89 @@
+# ngrok ship manages this workflow. Ship opens a pull request whenever its
+# template changes. To take over the file and stop those pull requests, add
+# the line "# ngrok-ship: pipeline-updates disabled" anywhere in it.
+
+name: "Build and Push Container (iamnande / app_3K1YZTC3IT1QoPFltrRR4fmX3BW)"
+
+on:
+  push:
+    branches: ["**"]
+  workflow_dispatch:
+
+env:
+  IMAGE_REFERENCE: "registry.ship.ngrok.com/ac_1gbcp4ul5rptr9eqgwj21icgsux/app_3k1yztc3it1qopfltrrr4fmx3bw"
+  NGROK_APP_ID: "app_3K1YZTC3IT1QoPFltrRR4fmX3BW"
+
+jobs:
+  build-and-push:
+    runs-on: "ubuntu-latest"
+    permissions:
+      contents: "read"
+    steps:
+      - uses: "actions/checkout@v6"
+
+      - uses: "docker/login-action@v4"
+        with:
+          registry: "registry.ship.ngrok.com"
+          username: "creg_3Fpsi82fNgKVILsGzy3HzE5JA28"
+          password: "${{ secrets.NGROK_REGISTRY_PASSWORD_CREG_3FPSI82FNGKVILSGZY3HZE5JA28 }}"
+
+      - id: "meta"
+        uses: "docker/metadata-action@v6"
+        with:
+          images: "${{ env.IMAGE_REFERENCE }}"
+          tags: |
+            type=sha,format=long,prefix=
+
+      - name: "Install Railpack"
+        env:
+          RAILPACK_VERSION: "0.30.0"
+        run: |
+          mkdir -p "${RUNNER_TEMP}/railpack-bin"
+          curl -fsSL https://railpack.com/install.sh | sh -s -- --bin-dir "${RUNNER_TEMP}/railpack-bin"
+          echo "${RUNNER_TEMP}/railpack-bin" >> "${GITHUB_PATH}"
+
+      - name: "Prepare Railpack build"
+        env:
+          NGROK_ROOT_DIRECTORY: "."
+          NGROK_RAILPACK_BUILD_COMMAND: ""
+          NGROK_RAILPACK_RUN_COMMAND: ""
+        run: |
+          args=(
+            prepare "${NGROK_ROOT_DIRECTORY}"
+            --plan-out "${RUNNER_TEMP}/railpack-plan.json"
+            --info-out "${RUNNER_TEMP}/railpack-info.json"
+            --error-missing-start
+          )
+          if test -n "${NGROK_RAILPACK_BUILD_COMMAND}"; then
+            args+=(--build-cmd "${NGROK_RAILPACK_BUILD_COMMAND}")
+          fi
+          if test -n "${NGROK_RAILPACK_RUN_COMMAND}"; then
+            args+=(--start-cmd "${NGROK_RAILPACK_RUN_COMMAND}")
+          fi
+          railpack "${args[@]}"
+
+      - uses: "docker/setup-buildx-action@v4"
+
+      - uses: "docker/build-push-action@v7"
+        with:
+          context: "."
+          file: "${{ runner.temp }}/railpack-plan.json"
+          push: true
+          tags: "${{ steps.meta.outputs.tags }}"
+          labels: "${{ steps.meta.outputs.labels }}"
+          build-args: |
+            BUILDKIT_SYNTAX=ghcr.io/railwayapp/railpack-frontend:v0.30.0
+            cache-key=${{ env.NGROK_APP_ID }}
+          cache-from: "type=gha,scope=${{ env.NGROK_APP_ID }}"
+          cache-to: "type=gha,mode=max,scope=${{ env.NGROK_APP_ID }}"
+
+      - name: "Write image reference"
+        run: |
+          cat <<EOF > ngrok-image.json
+          {"image":"${{ steps.meta.outputs.tags }}","commit_sha":"${{ github.sha }}"}
+          EOF
+
+      - uses: "actions/upload-artifact@v7"
+        with:
+          name: "ngrok-compute-image"
+          path: "ngrok-image.json"
