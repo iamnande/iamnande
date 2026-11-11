@@ -10,8 +10,10 @@ driven) globally distributed systems - even micro-services _and_ monoliths
 
 i'm an authonaut at [@bitwarden](https://bitwarden.com/careers/).
 
-my history includes @ngrok, @Kong, @Nike-Inc, and @usbank - each leaving their
-own unique impacts on how i build, ship, and secure technology.
+my history includes [@ngrok](https://github.com/ngrok), 
+[@Kong](https://github.com/kong), [@Nike-Inc](https://github.com/Nike-Inc), 
+and [@usbank](https://github.com/usbank) - each leaving their own unique 
+impacts on how i build, ship, and secure technology.
 
 stay tuned, or even better yet, join me - on an epic pursuit of digital 
 sovereignty, building my own little corner of the internet, and going 
@@ -23,4 +25,4 @@ _entirely... passwordless!_
 
 this repository also serves [nick.morethq.com](https://nick.morethq.com).
 
-[philosophy](./content/pages/philosophy.md) · [linkedin](https://www.linkedin.com/in/iamnande)
+[philosophy](https://nick.morethq.com/philosophy) · [linkedin](https://www.linkedin.com/in/iamnande)
