@@ -8,7 +8,7 @@ i build identity & security tech, platforms (& tooling), (event, and/or rpc,
 driven) globally distributed systems - even micro-services _and_ monoliths 
 (occasionally even breaking down monoliths into cute little micro-services).
 
-i'm an authonaut at [@bitwarden](https://bitwarden.com/careers/).
+i'm an authonaut at [@bitwarden](https://github.com/bitwarden).
 
 my history includes [@ngrok](https://github.com/ngrok), 
 [@Kong](https://github.com/kong), [@Nike-Inc](https://github.com/Nike-Inc), 
